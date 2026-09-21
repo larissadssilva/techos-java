@@ -1,102 +1,58 @@
 # 🔧 TechOS
 
-Sistema de Ordem de Serviço para assistência técnica, desenvolvido em Java.
+Sistema de Ordem de Serviço para assistência técnica — com duas versões: **Java** (terminal) e **Mobile** (React Native/Expo).
+
+O projeto nasceu da minha experiência real como técnica de informática, organizando o fluxo de aparelhos recebidos para reparo (cliente, aparelho, problema, valor e status).
 
 ---
 
-## 📋 Sobre o projeto
-
-O **TechOS** é um sistema interativo executado no terminal que permite gerenciar ordens de serviço de uma loja de assistência técnica, organizando o fluxo de aparelhos recebidos para reparo.
-
-Projeto desenvolvido como **Projeto de Extensão Universitária** no curso de **Ciência da Computação**, alinhado ao **ODS 8 — Trabalho Decente e Crescimento Econômico**.
+## 📁 Estrutura do repositório
+techos-java/      → versão original, feita em Java (terminal)
+techos-mobile/    → versão mobile, feita em React Native (Expo)
 
 ---
 
-## ⚙️ Funcionalidades
+## ☕ Versão Java (`techos-java`)
 
-- ✅ Criação de ordens de serviço com numeração automática
-- ✅ Registro de cliente, aparelho, problema e valor
-- ✅ Atualização de status do reparo
-- ✅ Listagem de ordens em aberto
-- ✅ Listagem de todas as ordens
+Sistema interativo executado no terminal, feito como Projeto de Extensão Universitária em Ciência da Computação.
 
----
+**O que faz:**
+- Cria ordens de serviço com numeração automática
+- Registra cliente, aparelho, problema e valor
+- Atualiza o status do reparo (Aguardando / Em andamento / Concluído)
+- Lista ordens abertas ou todas as ordens
 
-## 📊 Status disponíveis
-
-| Status | Descrição |
-|---|---|
-| Aguardando | Aparelho recebido, aguardando reparo |
-| Em andamento | Reparo em execução |
-| Concluído | Reparo finalizado, pronto para retirada |
-
----
-
-## 🧠 Conceitos aplicados
-
-- Tipos de dados primitivos e compostos
-- Constantes e variáveis
-- Entrada e saída de dados (Scanner / System.out)
-- Estruturas condicionais (switch)
-- Estruturas de repetição (do-while, for-each)
-- Manipulação de listas dinâmicas (ArrayList)
-- Organização em métodos reutilizáveis
-
----
-
-## 🌍 Conexão com ODS
-
-| ODS | Contribuição |
-|---|---|
-| ODS 8 — Trabalho Decente | Organiza e profissionaliza pequenos negócios locais |
-| ODS 9 — Inovação | Aplica tecnologia acessível a negócios tradicionais |
-
----
-
-## ▶️ Como executar
-
-### Pré-requisitos
-- Java JDK 8 ou superior instalado
-
-### Passos
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/techos-java.git
-
-# Acesse a pasta
+**Como rodar:**
 cd techos-java
-
-# Compile
 javac OrdemDeServico.java
-
-# Execute
 java OrdemDeServico
-```
 
 ---
 
-## 📸 Exemplo de uso
+## 📱 Versão Mobile (`techos-mobile`)
 
-```
-===== MENU PRINCIPAL =====
-1 - Nova Ordem de Serviço
-2 - Listar Ordens Abertas
-3 - Atualizar Status
-4 - Listar Todas as Ordens
-0 - Sair
-Escolha uma opção: 1
+Adaptação do mesmo sistema para aplicativo mobile, usando **React Native** com **Expo**. Mesma lógica de ordens de serviço, agora com interface de toque, pensada para uso rápido no dia a dia de uma assistência técnica.
 
-Nome do cliente: Maria Souza
-Telefone: (11) 99999-9999
-Aparelho: iPhone 11
-Problema relatado: Tela quebrada
-Valor do serviço (R$): 350.00
+**O que faz:**
+- Cadastro de novas ordens de serviço por formulário
+- Listagem visual das ordens com status
+- Mesma estrutura de dados da versão Java, reescrita em JavaScript
 
-✓ Ordem de Serviço Nº 1 criada com sucesso!
-```
+**Como rodar:**
+cd techos-mobile
+npm install
+npx expo start
+
+Depois, escaneie o QR code com o app **Expo Go** (Android ou iOS).
 
 ---
 
-## 👨‍💻 Desenvolvido por
+## 🧠 Por que duas versões?
 
-Projeto de Extensão Universitária — Ciência da Computação
+A versão Java foi o primeiro passo, focado em lógica de programação e estruturas de dados. A versão mobile é a evolução natural: pegar um problema real (gestão de ordens de serviço) e levar para o formato que faz mais sentido no dia a dia — o celular.
+
+---
+
+## 👩‍💻 Desenvolvido por
+
+Larissa Santos — Estudante de Ciência da Computação, foco em desenvolvimento mobile.
